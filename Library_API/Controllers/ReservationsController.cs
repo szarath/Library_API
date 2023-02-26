@@ -112,6 +112,32 @@ namespace Library_API.Controllers
             return CreatedAtAction("GetReservation", new { id = reservation.ReservationId }, reservation);
         }
 
+        [HttpPut("Borrow/{bookId}")]
+        public async Task<ActionResult<Reservation>> PutReservation(int bookId)
+        {
+            var reservation = _context.Reservations.FirstOrDefault(r => r.BookId == bookId);
+            reservation.DateBorrowed = DateTime.Now;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ReservationExists(bookId))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+          
+
+            return reservation;
+
+        }
 
         // DELETE: Reservations/Delete/5
         [HttpDelete("DeleteReservation/{Id}")]

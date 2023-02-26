@@ -105,6 +105,10 @@ namespace Library_API.Models
                 entity.Property(e => e.DateReserved).IsRequired()
                     .HasColumnName("date_reserved")
                     .HasColumnType("datetime");
+
+                entity.Property(e => e.DateBorrowed)
+                   .HasColumnName("date_burrowed")
+                   .HasColumnType("datetime");
             });
 
             modelBuilder.Entity<Member>(entity =>
