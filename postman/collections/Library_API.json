@@ -1,0 +1,1879 @@
+{
+	"info": {
+		"_postman_id": "95647539-fc34-4bfa-a5b6-ad686a771070",
+		"name": "Library_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "16355301-95647539-fc34-4bfa-a5b6-ad686a771070"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Books",
+					"item": [
+						{
+							"name": "/api/Books/GetBooks",
+							"id": "52af1b16-c5a2-4de3-bc9c-21546412cd50",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Books/GetBooks",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Books",
+										"GetBooks"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "f58725d3-3168-428d-bd56-eeb67b79579c",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Books/GetBooks",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Books",
+												"GetBooks"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"bookId\": -84449481,\n    \"title\": \"ut veniam in\",\n    \"type\": \"consectetur fugiat\",\n    \"publishedDate\": \"1959-01-28T23:09:20.396Z\"\n  },\n  {\n    \"bookId\": 2500242,\n    \"title\": \"et commodo\",\n    \"type\": \"id in irure dolor incididunt\",\n    \"publishedDate\": \"2007-10-11T13:16:58.392Z\"\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/Books/GetBook/:id",
+							"id": "4232404f-9041-455a-8982-7cc54f56c739",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Books/GetBook/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Books",
+										"GetBook",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "31535644",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "00e7163e-6817-44c3-b394-21dd2ffc6368",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Books/GetBook/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Books",
+												"GetBook",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "31535644",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"bookId\": 92842366,\n  \"title\": \"occaecat cupidat\",\n  \"type\": \"Ut dolor minim in dolore\",\n  \"publishedDate\": \"2006-03-21T16:24:05.074Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Books/CreateBook",
+							"id": "c158600c-487e-4716-8100-a1edce02e8ca",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"Harry Potter 1\",\n  \"type\": \"Fantasy\",\n  \"publishedDate\": \"2006-03-21T16:24:05.074Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Books/CreateBook",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Books",
+										"CreateBook"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "8703ba67-4bb9-46cb-b7d0-a0da7f57d423",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"title\": \"Harry Potter 1\",\n  \"type\": \"Fantasy\",\n  \"publishedDate\": \"2006-03-21T16:24:05.074Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Books/CreateBook",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Books",
+												"CreateBook"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"bookId\": 92842366,\n  \"title\": \"occaecat cupidat\",\n  \"type\": \"Ut dolor minim in dolore\",\n  \"publishedDate\": \"2006-03-21T16:24:05.074Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Books/UpdateBook/:id",
+							"id": "81978aca-d755-4bd2-a834-b51a21a65a93",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"bookId\": 92842366,\n  \"title\": \"occaecat cupidat\",\n  \"type\": \"Ut dolor minim in dolore\",\n  \"publishedDate\": \"2006-03-21T16:24:05.074Z\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Books/UpdateBook/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Books",
+										"UpdateBook",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "31535644",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e87e0ea7-367c-43ce-b2b0-d557d4a63d2f",
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"bookId\": 92842366,\n  \"title\": \"occaecat cupidat\",\n  \"type\": \"Ut dolor minim in dolore\",\n  \"publishedDate\": \"2006-03-21T16:24:05.074Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Books/UpdateBook/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Books",
+												"UpdateBook",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "31535644",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Books/DeleteBook/:id",
+							"id": "e5a4729e-9ec8-4f6b-8514-f081a09bfa17",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Books/DeleteBook/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Books",
+										"DeleteBook",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "31535644",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "178fd008-adcb-4e2d-81de-0fe4894e6996",
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Books/DeleteBook/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Books",
+												"DeleteBook",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "31535644",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"bookId\": 92842366,\n  \"title\": \"occaecat cupidat\",\n  \"type\": \"Ut dolor minim in dolore\",\n  \"publishedDate\": \"2006-03-21T16:24:05.074Z\"\n}"
+								}
+							]
+						}
+					],
+					"id": "d117443d-f8f5-4870-abb3-2a0c106dc667"
+				},
+				{
+					"name": "Members",
+					"item": [
+						{
+							"name": "/api/Members/GetMembers",
+							"id": "609e9c7d-9047-460f-b065-8cc4a065784a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Members/GetMembers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Members",
+										"GetMembers"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e0f99ed3-3476-490d-8cef-80bc7792db0f",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/GetMembers",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"GetMembers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"memberId\": 67869567,\n    \"firstName\": \"incididunt cupid\",\n    \"lastName\": \"magna sunt commodo\",\n    \"dateOfBirth\": \"2022-04-25T08:20:19.350Z\",\n    \"phoneNumber\": \"adipisicing enim\",\n    \"email\": \"s\",\n    \"password\": \"ut irure\",\n    \"refreshTokens\": [\n      {\n        \"tokenId\": 13295708,\n        \"memberId\": 9422408,\n        \"token\": \"id ut commodo\",\n        \"expiryDate\": \"2021-01-22T11:54:01.763Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      },\n      {\n        \"tokenId\": 86178021,\n        \"memberId\": 56672980,\n        \"token\": \"ad occaecat nostrud est\",\n        \"expiryDate\": \"1967-08-01T02:37:57.441Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      }\n    ]\n  },\n  {\n    \"memberId\": -7576056,\n    \"firstName\": \"sunt adipisicing occaecat dolore ut\",\n    \"lastName\": \"in aliqua\",\n    \"dateOfBirth\": \"1990-01-10T11:36:26.154Z\",\n    \"phoneNumber\": \"ut aliquip anim\",\n    \"email\": \"ad do\",\n    \"password\": \"aute occaecat in\",\n    \"refreshTokens\": [\n      {\n        \"tokenId\": 82730624,\n        \"memberId\": -59228561,\n        \"token\": \"velit sit\",\n        \"expiryDate\": \"1960-09-28T06:15:25.771Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      },\n      {\n        \"tokenId\": -27917139,\n        \"memberId\": 98775130,\n        \"token\": \"velit ipsum\",\n        \"expiryDate\": \"1948-09-27T19:02:06.956Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      }\n    ]\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/Members/GetMember/:id",
+							"id": "7d28ed46-d9b1-4bc4-8448-b9af204cab98",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Members/GetMember/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Members",
+										"GetMember",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "31535644",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "77d7b965-faf0-46c8-88c6-08c2f8d39997",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/GetMember/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"GetMember",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "31535644",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Members/GetMemberDetails/:id",
+							"id": "9f3c9eb9-25de-4793-9419-eb0ca2e5a69d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Members/GetMemberDetails/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Members",
+										"GetMemberDetails",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "31535644",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "a5413f0c-cab2-459d-9ff7-52a3c6f727e0",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/GetMemberDetails/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"GetMemberDetails",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "31535644",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Members/Login",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "138eb5d5-af11-419c-860f-779169ea4f28",
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "07df3719-bfba-4fdf-a28a-589c3a85c3c8",
+										"exec": [
+											"const response = pm.response.json();\r",
+											"pm.collectionVariables.set(\"token\",response.accessToken);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "e986251b-90ba-480a-a752-50a36c9ea3ee",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"firstName\": \"test\",\n  \"lastName\": \"test\",\n  \"phoneNumber\": \"0123456789\",\n  \"email\": \"test@gmail.com\",\n  \"password\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Members/Login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Members",
+										"Login"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "d9bede2c-7674-474e-a595-5911da164dbb",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"firstName\": \"test\",\n  \"lastName\": \"test\",\n  \"phoneNumber\": \"0123456789\",\n  \"email\": \"test@gmail.com\",\n  \"password\": \"test\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/Login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"Login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"memberId\": -34155512,\n  \"firstName\": \"id sed ullamco sint\",\n  \"lastName\": \"adipisicing\",\n  \"dateOfBirth\": \"1953-05-01T14:25:04.285Z\",\n  \"phoneNumber\": \"fugiat pariatur commodo ullamco dolore\",\n  \"email\": \"est incididunt sit velit\",\n  \"password\": \"irure sit\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": 33227667,\n      \"memberId\": 45590848,\n      \"token\": \"adipisicing\",\n      \"expiryDate\": \"1968-11-04T10:09:20.260Z\",\n      \"member\": {\n        \"memberId\": 40045144,\n        \"firstName\": \"labore aliqua incididunt id\",\n        \"lastName\": \"in eu\",\n        \"dateOfBirth\": \"1952-11-29T09:02:57.502Z\",\n        \"phoneNumber\": \"fugiat qui aliquip laborum\",\n        \"email\": \"ex veniam do\",\n        \"password\": \"aliqua\",\n        \"refreshTokens\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"tokenId\": 64706704,\n      \"memberId\": 63884755,\n      \"token\": \"en\",\n      \"expiryDate\": \"1984-11-06T09:27:00.334Z\",\n      \"member\": {\n        \"memberId\": -69612627,\n        \"firstName\": \"anim labore ut\",\n        \"lastName\": \"sit Excepteur ut ullamco\",\n        \"dateOfBirth\": \"1945-03-16T22:54:35.512Z\",\n        \"phoneNumber\": \"et sint\",\n        \"email\": \"sint do amet\",\n        \"password\": \"sint sunt laboris do\",\n        \"refreshTokens\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          }\n        ]\n      }\n    }\n  ],\n  \"accessToken\": \"ad quis\",\n  \"refreshToken\": \"nisi quis in\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Members/RegisterMember",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "2a4459f7-2c01-45e1-974c-18118802e070",
+										"exec": [
+											"const response = pm.response.json();\r",
+											"pm.collectionVariables.set(\"token\",response.accessToken);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "3d5ec54d-200b-4bd3-b217-ffbdc60f72e7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\n  \"firstName\": \"test\",\n  \"lastName\": \"test\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"0123456789\",\n  \"email\": \"test@gmail.com\",\n  \"password\": \"test\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Members/RegisterMember",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Members",
+										"RegisterMember"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e175cf38-ae28-41ca-bab2-ae624894d194",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\n  \"firstName\": \"test\",\n  \"lastName\": \"test\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"0123456789\",\n  \"email\": \"test@gmail.com\",\n  \"password\": \"test\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/RegisterMember",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"RegisterMember"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"memberId\": 5440161,\n  \"firstName\": \"Excepteur aliquip sunt fugiat\",\n  \"lastName\": \"sint esse\",\n  \"dateOfBirth\": \"1960-10-02T12:26:40.677Z\",\n  \"phoneNumber\": \"exercitation voluptate ut cillum\",\n  \"email\": \"Lorem et labore ea\",\n  \"password\": \"mollit eu deserunt\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -61149903,\n      \"memberId\": 8060765,\n      \"token\": \"magna nostrud\",\n      \"expiryDate\": \"1958-06-26T04:55:46.874Z\",\n      \"member\": {\n        \"memberId\": -28175001,\n        \"firstName\": \"nulla culpa\",\n        \"lastName\": \"est eiusmod aliquip\",\n        \"dateOfBirth\": \"2016-04-08T17:11:34.008Z\",\n        \"phoneNumber\": \"tempor quis sunt\",\n        \"email\": \"cillum consectetur\",\n        \"password\": \"\",\n        \"refreshTokens\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"tokenId\": -55809725,\n      \"memberId\": -46109953,\n      \"token\": \"laborum dolore\",\n      \"expiryDate\": \"1971-01-04T21:42:02.188Z\",\n      \"member\": {\n        \"memberId\": -82067131,\n        \"firstName\": \"non adipisicing sit\",\n        \"lastName\": \"proident ut in\",\n        \"dateOfBirth\": \"1988-09-01T16:42:57.530Z\",\n        \"phoneNumber\": \"incididunt tempor officia \",\n        \"email\": \"qui elit sunt\",\n        \"password\": \"exercitation Lorem est\",\n        \"refreshTokens\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          }\n        ]\n      }\n    }\n  ],\n  \"accessToken\": \"laboris commodo\",\n  \"refreshToken\": \"reprehenderit incididunt\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Members/RefreshToken",
+							"id": "93556996-7960-4da3-a737-ac09fe2d2cf2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"accessToken\": \"non\",\n  \"refreshToken\": \"Excepteur\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Members/RefreshToken",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Members",
+										"RefreshToken"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "95d336fd-d670-489e-9e17-b1922ac01c6b",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"accessToken\": \"non\",\n  \"refreshToken\": \"Excepteur\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/RefreshToken",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"RefreshToken"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"memberId\": 5440161,\n  \"firstName\": \"Excepteur aliquip sunt fugiat\",\n  \"lastName\": \"sint esse\",\n  \"dateOfBirth\": \"1960-10-02T12:26:40.677Z\",\n  \"phoneNumber\": \"exercitation voluptate ut cillum\",\n  \"email\": \"Lorem et labore ea\",\n  \"password\": \"mollit eu deserunt\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -61149903,\n      \"memberId\": 8060765,\n      \"token\": \"magna nostrud\",\n      \"expiryDate\": \"1958-06-26T04:55:46.874Z\",\n      \"member\": {\n        \"memberId\": -28175001,\n        \"firstName\": \"nulla culpa\",\n        \"lastName\": \"est eiusmod aliquip\",\n        \"dateOfBirth\": \"2016-04-08T17:11:34.008Z\",\n        \"phoneNumber\": \"tempor quis sunt\",\n        \"email\": \"cillum consectetur\",\n        \"password\": \"\",\n        \"refreshTokens\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          }\n        ]\n      }\n    },\n    {\n      \"tokenId\": -55809725,\n      \"memberId\": -46109953,\n      \"token\": \"laborum dolore\",\n      \"expiryDate\": \"1971-01-04T21:42:02.188Z\",\n      \"member\": {\n        \"memberId\": -82067131,\n        \"firstName\": \"non adipisicing sit\",\n        \"lastName\": \"proident ut in\",\n        \"dateOfBirth\": \"1988-09-01T16:42:57.530Z\",\n        \"phoneNumber\": \"incididunt tempor officia \",\n        \"email\": \"qui elit sunt\",\n        \"password\": \"exercitation Lorem est\",\n        \"refreshTokens\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/RefreshToken detected>\"\n          }\n        ]\n      }\n    }\n  ],\n  \"accessToken\": \"laboris commodo\",\n  \"refreshToken\": \"reprehenderit incididunt\"\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Members/GetMemberByAccessToken",
+							"id": "f9cb0c17-cccf-4450-8a18-9031c38a2d7a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "consectetur tempor",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Members/GetMemberByAccessToken",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Members",
+										"GetMemberByAccessToken"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "f248d318-5be6-4722-a043-a0dd0e62af1b",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "consectetur tempor",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/GetMemberByAccessToken",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"GetMemberByAccessToken"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Members/UpdateMember/:id",
+							"id": "a3d20b8b-949a-424e-bebe-e45b52ad7c73",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Members/UpdateMember/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Members",
+										"UpdateMember",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "31535644",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "36129c7f-52ab-4102-8e7f-5c13d5094f7b",
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/UpdateMember/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"UpdateMember",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "31535644",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Members/CreateMember",
+							"id": "c3e63e83-e328-4a7b-9c6b-56a8a9894223",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Members/CreateMember",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Members",
+										"CreateMember"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "833698e6-e8fc-4093-91c8-90617972b709",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/CreateMember",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"CreateMember"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Members/DeleteMember/:id",
+							"id": "7208dd5e-f411-4816-a505-eeec708513a3",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Members/DeleteMember/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Members",
+										"DeleteMember",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "31535644",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e34752cc-109c-4171-8520-69d5d1116c4d",
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/DeleteMember/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"DeleteMember",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "31535644",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}"
+								}
+							]
+						}
+					],
+					"id": "ba158bda-527e-4725-b8b8-28974a374776",
+					"auth": {
+						"type": "noauth"
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5f6bb8ed-09da-44a6-9735-cb5b59df98d4",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "8db52b85-f2e6-4262-9169-aaf00aaffd9d",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Reservations",
+					"item": [
+						{
+							"name": "/api/Reservations/GetReservations",
+							"id": "90b8fb2f-d20f-443a-b7a1-48e96da1bda1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Reservations/GetReservations",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Reservations",
+										"GetReservations"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "271c3aac-3429-4464-86a3-87683326cd2c",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Reservations/GetReservations",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Reservations",
+												"GetReservations"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"bookId\": 71054979,\n    \"memberId\": -81826752,\n    \"dateReserved\": \"1960-10-13T17:48:02.131Z\",\n    \"book\": {\n      \"bookId\": -18305993,\n      \"title\": \"incididunt velit proident ipsum\",\n      \"type\": \"do reprehenderit in\",\n      \"publishedDate\": \"1956-08-08T08:34:22.723Z\"\n    },\n    \"member\": {\n      \"memberId\": -80727085,\n      \"firstName\": \"incididunt minim dolor exercitation\",\n      \"lastName\": \"sit eiusmod sed ad dolor\",\n      \"dateOfBirth\": \"2008-01-15T12:25:19.938Z\",\n      \"phoneNumber\": \"Ut occaecat enim velit\",\n      \"email\": \"velit\",\n      \"password\": \"enim aliqua\",\n      \"refreshTokens\": [\n        {\n          \"tokenId\": 43228066,\n          \"memberId\": 75209698,\n          \"token\": \"irure veniam ad\",\n          \"expiryDate\": \"2019-04-28T03:12:02.435Z\",\n          \"member\": {\n            \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n          }\n        },\n        {\n          \"tokenId\": -34246809,\n          \"memberId\": -86858531,\n          \"token\": \"esse in deserunt\",\n          \"expiryDate\": \"1990-03-29T12:56:15.957Z\",\n          \"member\": {\n            \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n          }\n        }\n      ]\n    }\n  },\n  {\n    \"bookId\": 71918285,\n    \"memberId\": -88296311,\n    \"dateReserved\": \"1981-04-23T10:59:33.432Z\",\n    \"book\": {\n      \"bookId\": -24302636,\n      \"title\": \"voluptate labore\",\n      \"type\": \"sit ut\",\n      \"publishedDate\": \"1998-05-03T21:57:11.948Z\"\n    },\n    \"member\": {\n      \"memberId\": 33304146,\n      \"firstName\": \"ea in fugiat deserunt\",\n      \"lastName\": \"amet velit deserunt irure\",\n      \"dateOfBirth\": \"1951-01-13T12:32:03.045Z\",\n      \"phoneNumber\": \"sunt nulla\",\n      \"email\": \"aliqua consectetur\",\n      \"password\": \"culpa consequat quis\",\n      \"refreshTokens\": [\n        {\n          \"tokenId\": -99891732,\n          \"memberId\": -6263089,\n          \"token\": \"cupidatat sed est\",\n          \"expiryDate\": \"1982-02-15T05:13:09.576Z\",\n          \"member\": {\n            \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n          }\n        },\n        {\n          \"tokenId\": -36019271,\n          \"memberId\": 87566393,\n          \"token\": \"deserunt dolore sint ad\",\n          \"expiryDate\": \"1980-10-06T08:18:51.054Z\",\n          \"member\": {\n            \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n          }\n        }\n      ]\n    }\n  }\n]"
+								}
+							]
+						},
+						{
+							"name": "/api/Reservations/GetBookReservation/:bookId",
+							"id": "05c1e3f3-3a7b-4e8f-989a-42c5089c570e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Reservations/GetBookReservation/:bookId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Reservations",
+										"GetBookReservation",
+										":bookId"
+									],
+									"variable": [
+										{
+											"key": "bookId",
+											"value": "31535644",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "b4794c59-b065-427d-8f7b-fee7fc5ad94b",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Reservations/GetBookReservation/:bookId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Reservations",
+												"GetBookReservation",
+												":bookId"
+											],
+											"variable": [
+												{
+													"key": "bookId",
+													"value": "31535644",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"bookId\": -10133821,\n  \"memberId\": 99748230,\n  \"dateReserved\": \"2001-08-31T17:01:47.035Z\",\n  \"book\": {\n    \"bookId\": -60426403,\n    \"title\": \"con\",\n    \"type\": \"fugiat incididunt do deserunt Duis\",\n    \"publishedDate\": \"2003-04-11T12:43:06.190Z\"\n  },\n  \"member\": {\n    \"memberId\": 78685291,\n    \"firstName\": \"aliquip tempor veniam consequat\",\n    \"lastName\": \"ea velit sint commodo\",\n    \"dateOfBirth\": \"1958-09-16T17:24:46.190Z\",\n    \"phoneNumber\": \"esse consecte\",\n    \"email\": \"id\",\n    \"password\": \"cillum consequat sit\",\n    \"refreshTokens\": [\n      {\n        \"tokenId\": -44844889,\n        \"memberId\": -30688385,\n        \"token\": \"commodo aliquip\",\n        \"expiryDate\": \"1969-07-17T02:07:05.817Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      },\n      {\n        \"tokenId\": -29007983,\n        \"memberId\": -76869773,\n        \"token\": \"aute eiusmod in sit\",\n        \"expiryDate\": \"1989-03-19T01:48:26.635Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      }\n    ]\n  }\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Reservations/GetMemberReservations/:memberId",
+							"id": "0e918f94-0527-4b88-8f5a-193a3c2eb7d7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Reservations/GetMemberReservations/:memberId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Reservations",
+										"GetMemberReservations",
+										":memberId"
+									],
+									"variable": [
+										{
+											"key": "memberId",
+											"value": "1",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "fe3ad111-0fad-4545-a6b4-653bc0e05cb0",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Reservations/GetMemberReservations/:memberId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Reservations",
+												"GetMemberReservations",
+												":memberId"
+											],
+											"variable": [
+												{
+													"key": "memberId",
+													"value": "1",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"bookId\": -10133821,\n  \"memberId\": 99748230,\n  \"dateReserved\": \"2001-08-31T17:01:47.035Z\",\n  \"book\": {\n    \"bookId\": -60426403,\n    \"title\": \"con\",\n    \"type\": \"fugiat incididunt do deserunt Duis\",\n    \"publishedDate\": \"2003-04-11T12:43:06.190Z\"\n  },\n  \"member\": {\n    \"memberId\": 78685291,\n    \"firstName\": \"aliquip tempor veniam consequat\",\n    \"lastName\": \"ea velit sint commodo\",\n    \"dateOfBirth\": \"1958-09-16T17:24:46.190Z\",\n    \"phoneNumber\": \"esse consecte\",\n    \"email\": \"id\",\n    \"password\": \"cillum consequat sit\",\n    \"refreshTokens\": [\n      {\n        \"tokenId\": -44844889,\n        \"memberId\": -30688385,\n        \"token\": \"commodo aliquip\",\n        \"expiryDate\": \"1969-07-17T02:07:05.817Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      },\n      {\n        \"tokenId\": -29007983,\n        \"memberId\": -76869773,\n        \"token\": \"aute eiusmod in sit\",\n        \"expiryDate\": \"1989-03-19T01:48:26.635Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      }\n    ]\n  }\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Reservations/CreateReservation",
+							"id": "bb7e4b30-441a-4abe-b781-4147318be103",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"bookId\": -10133821,\n  \"memberId\": 99748230,\n  \"dateReserved\": \"2001-08-31T17:01:47.035Z\",\n  \"book\": {\n    \"bookId\": -60426403,\n    \"title\": \"con\",\n    \"type\": \"fugiat incididunt do deserunt Duis\",\n    \"publishedDate\": \"2003-04-11T12:43:06.190Z\"\n  },\n  \"member\": {\n    \"memberId\": 78685291,\n    \"firstName\": \"aliquip tempor veniam consequat\",\n    \"lastName\": \"ea velit sint commodo\",\n    \"dateOfBirth\": \"1958-09-16T17:24:46.190Z\",\n    \"phoneNumber\": \"esse consecte\",\n    \"email\": \"id\",\n    \"password\": \"cillum consequat sit\",\n    \"refreshTokens\": [\n      {\n        \"tokenId\": -44844889,\n        \"memberId\": -30688385,\n        \"token\": \"commodo aliquip\",\n        \"expiryDate\": \"1969-07-17T02:07:05.817Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      },\n      {\n        \"tokenId\": -29007983,\n        \"memberId\": -76869773,\n        \"token\": \"aute eiusmod in sit\",\n        \"expiryDate\": \"1989-03-19T01:48:26.635Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      }\n    ]\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Reservations/CreateReservation",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Reservations",
+										"CreateReservation"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "e14f60cc-e3ca-440a-8a89-96346223f9b3",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"bookId\": -10133821,\n  \"memberId\": 99748230,\n  \"dateReserved\": \"2001-08-31T17:01:47.035Z\",\n  \"book\": {\n    \"bookId\": -60426403,\n    \"title\": \"con\",\n    \"type\": \"fugiat incididunt do deserunt Duis\",\n    \"publishedDate\": \"2003-04-11T12:43:06.190Z\"\n  },\n  \"member\": {\n    \"memberId\": 78685291,\n    \"firstName\": \"aliquip tempor veniam consequat\",\n    \"lastName\": \"ea velit sint commodo\",\n    \"dateOfBirth\": \"1958-09-16T17:24:46.190Z\",\n    \"phoneNumber\": \"esse consecte\",\n    \"email\": \"id\",\n    \"password\": \"cillum consequat sit\",\n    \"refreshTokens\": [\n      {\n        \"tokenId\": -44844889,\n        \"memberId\": -30688385,\n        \"token\": \"commodo aliquip\",\n        \"expiryDate\": \"1969-07-17T02:07:05.817Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      },\n      {\n        \"tokenId\": -29007983,\n        \"memberId\": -76869773,\n        \"token\": \"aute eiusmod in sit\",\n        \"expiryDate\": \"1989-03-19T01:48:26.635Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      }\n    ]\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Reservations/CreateReservation",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Reservations",
+												"CreateReservation"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"bookId\": -10133821,\n  \"memberId\": 99748230,\n  \"dateReserved\": \"2001-08-31T17:01:47.035Z\",\n  \"book\": {\n    \"bookId\": -60426403,\n    \"title\": \"con\",\n    \"type\": \"fugiat incididunt do deserunt Duis\",\n    \"publishedDate\": \"2003-04-11T12:43:06.190Z\"\n  },\n  \"member\": {\n    \"memberId\": 78685291,\n    \"firstName\": \"aliquip tempor veniam consequat\",\n    \"lastName\": \"ea velit sint commodo\",\n    \"dateOfBirth\": \"1958-09-16T17:24:46.190Z\",\n    \"phoneNumber\": \"esse consecte\",\n    \"email\": \"id\",\n    \"password\": \"cillum consequat sit\",\n    \"refreshTokens\": [\n      {\n        \"tokenId\": -44844889,\n        \"memberId\": -30688385,\n        \"token\": \"commodo aliquip\",\n        \"expiryDate\": \"1969-07-17T02:07:05.817Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      },\n      {\n        \"tokenId\": -29007983,\n        \"memberId\": -76869773,\n        \"token\": \"aute eiusmod in sit\",\n        \"expiryDate\": \"1989-03-19T01:48:26.635Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      }\n    ]\n  }\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Reservations/DeleteReservation/:Id",
+							"id": "41f7d0dd-0505-4229-8a3e-d109daa1c0b9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Reservations/DeleteReservation/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Reservations",
+										"DeleteReservation",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "f1881c61-adf4-45ea-9f17-5b0051bafdc4",
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Reservations/DeleteReservation/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Reservations",
+												"DeleteReservation",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": null
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"bookId\": -10133821,\n  \"memberId\": 99748230,\n  \"dateReserved\": \"2001-08-31T17:01:47.035Z\",\n  \"book\": {\n    \"bookId\": -60426403,\n    \"title\": \"con\",\n    \"type\": \"fugiat incididunt do deserunt Duis\",\n    \"publishedDate\": \"2003-04-11T12:43:06.190Z\"\n  },\n  \"member\": {\n    \"memberId\": 78685291,\n    \"firstName\": \"aliquip tempor veniam consequat\",\n    \"lastName\": \"ea velit sint commodo\",\n    \"dateOfBirth\": \"1958-09-16T17:24:46.190Z\",\n    \"phoneNumber\": \"esse consecte\",\n    \"email\": \"id\",\n    \"password\": \"cillum consequat sit\",\n    \"refreshTokens\": [\n      {\n        \"tokenId\": -44844889,\n        \"memberId\": -30688385,\n        \"token\": \"commodo aliquip\",\n        \"expiryDate\": \"1969-07-17T02:07:05.817Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      },\n      {\n        \"tokenId\": -29007983,\n        \"memberId\": -76869773,\n        \"token\": \"aute eiusmod in sit\",\n        \"expiryDate\": \"1989-03-19T01:48:26.635Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      }\n    ]\n  }\n}"
+								}
+							]
+						},
+						{
+							"name": "/api/Reservations/DeleteBookReservation/:bookId",
+							"id": "5f1259fd-0e4c-46fc-b4c2-79120e3479bc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/Reservations/DeleteReservation/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Reservations",
+										"DeleteReservation",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "5438b6e3-229e-44f8-8ac3-4de833444d56",
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Reservations/DeleteReservation/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Reservations",
+												"DeleteReservation",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": null
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"bookId\": -10133821,\n  \"memberId\": 99748230,\n  \"dateReserved\": \"2001-08-31T17:01:47.035Z\",\n  \"book\": {\n    \"bookId\": -60426403,\n    \"title\": \"con\",\n    \"type\": \"fugiat incididunt do deserunt Duis\",\n    \"publishedDate\": \"2003-04-11T12:43:06.190Z\"\n  },\n  \"member\": {\n    \"memberId\": 78685291,\n    \"firstName\": \"aliquip tempor veniam consequat\",\n    \"lastName\": \"ea velit sint commodo\",\n    \"dateOfBirth\": \"1958-09-16T17:24:46.190Z\",\n    \"phoneNumber\": \"esse consecte\",\n    \"email\": \"id\",\n    \"password\": \"cillum consequat sit\",\n    \"refreshTokens\": [\n      {\n        \"tokenId\": -44844889,\n        \"memberId\": -30688385,\n        \"token\": \"commodo aliquip\",\n        \"expiryDate\": \"1969-07-17T02:07:05.817Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      },\n      {\n        \"tokenId\": -29007983,\n        \"memberId\": -76869773,\n        \"token\": \"aute eiusmod in sit\",\n        \"expiryDate\": \"1989-03-19T01:48:26.635Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      }\n    ]\n  }\n}"
+								}
+							]
+						}
+					],
+					"id": "0a3329ec-07ce-40d4-a503-95cab8993c39"
+				}
+			],
+			"id": "1cb4ee33-9ec3-4966-99f9-89db5800573a"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "3d1e72a4-5d2c-4576-a998-cbb4abd9071e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "08ba7e60-55f8-43e3-afc9-8619aff6a3c1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "fa4ada52-c308-4997-9c66-dd0f33612588",
+			"key": "baseUrl",
+			"value": "https://localhost:7049",
+			"type": "string"
+		},
+		{
+			"id": "2cf1312e-0a2d-4347-85bb-b49065146f25",
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE2Nzc0MTYxMDUsImV4cCI6MTY3NzUwMjUwNSwiaWF0IjoxNjc3NDE2MTA1fQ.sWfGFcD2HGI_CAKc8IaJsNMVf9IYL0DZRE5kTkCBguc"
+		},
+		{
+			"id": "b325c6f4-53ad-4878-9bc7-cf30a716b656",
+			"key": "secret",
+			"value": "2raeYSqK70VOS7FPKf4c7T77rkm3hShH"
+		}
+	]
+}
