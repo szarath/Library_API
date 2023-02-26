@@ -1818,6 +1818,103 @@
 									"body": "{\n  \"bookId\": -10133821,\n  \"memberId\": 99748230,\n  \"dateReserved\": \"2001-08-31T17:01:47.035Z\",\n  \"book\": {\n    \"bookId\": -60426403,\n    \"title\": \"con\",\n    \"type\": \"fugiat incididunt do deserunt Duis\",\n    \"publishedDate\": \"2003-04-11T12:43:06.190Z\"\n  },\n  \"member\": {\n    \"memberId\": 78685291,\n    \"firstName\": \"aliquip tempor veniam consequat\",\n    \"lastName\": \"ea velit sint commodo\",\n    \"dateOfBirth\": \"1958-09-16T17:24:46.190Z\",\n    \"phoneNumber\": \"esse consecte\",\n    \"email\": \"id\",\n    \"password\": \"cillum consequat sit\",\n    \"refreshTokens\": [\n      {\n        \"tokenId\": -44844889,\n        \"memberId\": -30688385,\n        \"token\": \"commodo aliquip\",\n        \"expiryDate\": \"1969-07-17T02:07:05.817Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      },\n      {\n        \"tokenId\": -29007983,\n        \"memberId\": -76869773,\n        \"token\": \"aute eiusmod in sit\",\n        \"expiryDate\": \"1989-03-19T01:48:26.635Z\",\n        \"member\": {\n          \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n        }\n      }\n    ]\n  }\n}"
 								}
 							]
+						},
+						{
+							"name": "/api/Reservations/Borrow/:bookId",
+							"id": "c2ef0905-907f-47f4-b69b-3595ff086569",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Reservations/Borrow/:bookId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Reservations",
+										"Borrow",
+										":bookId"
+									],
+									"variable": [
+										{
+											"key": "bookId",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "b006e16b-0173-482f-a1e6-8c0fb9e17787",
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"memberId\": -30422580,\n  \"firstName\": \"qui minim enim\",\n  \"lastName\": \"cupidatat ex\",\n  \"dateOfBirth\": \"1984-05-10T00:32:29.421Z\",\n  \"phoneNumber\": \"Lorem ut velit\",\n  \"email\": \"consectetur pariatur\",\n  \"password\": \"sunt ex velit ea Lorem\",\n  \"refreshTokens\": [\n    {\n      \"tokenId\": -29713051,\n      \"memberId\": -81489717,\n      \"token\": \"reprehenderit veniam labore cupidatat proident\",\n      \"expiryDate\": \"2006-10-01T18:58:38.890Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    },\n    {\n      \"tokenId\": 89826354,\n      \"memberId\": -55017163,\n      \"token\": \"irure dolor magna cupidatat\",\n      \"expiryDate\": \"1981-07-12T19:25:48.864Z\",\n      \"member\": {\n        \"value\": \"<Circular reference to #/components/schemas/Member detected>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Members/UpdateMember/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Members",
+												"UpdateMember",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "31535644",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
 						}
 					],
 					"id": "0a3329ec-07ce-40d4-a503-95cab8993c39"
@@ -1860,18 +1957,18 @@
 	],
 	"variable": [
 		{
-			"id": "fa4ada52-c308-4997-9c66-dd0f33612588",
+			"id": "cb0efbf8-db9e-4b85-a791-0861c37c088a",
 			"key": "baseUrl",
 			"value": "https://localhost:7049",
 			"type": "string"
 		},
 		{
-			"id": "2cf1312e-0a2d-4347-85bb-b49065146f25",
+			"id": "7aa9714b-d0ce-49a6-86d6-a5ca13f36c1e",
 			"key": "token",
 			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjEiLCJuYmYiOjE2Nzc0MTYxMDUsImV4cCI6MTY3NzUwMjUwNSwiaWF0IjoxNjc3NDE2MTA1fQ.sWfGFcD2HGI_CAKc8IaJsNMVf9IYL0DZRE5kTkCBguc"
 		},
 		{
-			"id": "b325c6f4-53ad-4878-9bc7-cf30a716b656",
+			"id": "03b68f91-cec5-45a2-8af5-55617ab98b3e",
 			"key": "secret",
 			"value": "2raeYSqK70VOS7FPKf4c7T77rkm3hShH"
 		}
