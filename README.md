@@ -5,6 +5,6 @@ API to manage the reservations of avaliable books in a library Makes use of JWT 
         Open project using Visual Studio
         Edit appsettings.json file where LibraryDB is edit the string to match your database connection string
         Run add-migration "your_initial_migraiton" in package manage console in visual studio
-        Run update-database "your_initial_migraiton" in package manage console in visual studio
+        Run update-database in package manage console in visual studio
 
     Mentions There is no data present and as you need to register a new member, books and reservations after.
