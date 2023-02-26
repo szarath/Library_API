@@ -1,5 +1,5 @@
 # Library_API
-API to manage the reservations of avaliable books in a library Makes use of JWT and only allows loged in personal from making any changes to the DB Uses code first approach with .NET 6.0
+API to manage the reservations of avaliable books in a library Makes use of JWT and only allows logged in personal from making any changes to the DB Uses code first approach with .NET 6.0
 
     Prerequisites
         Open project using Visual Studio
